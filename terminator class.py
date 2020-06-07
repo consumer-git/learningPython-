@@ -1,3 +1,5 @@
+
+
 import time
 import random
 
@@ -54,6 +56,24 @@ class Terminator:
             print('holstering weapon')
 
 
+class Rev19 ( Terminator ):
+        def __init__(self, name):
+            super ().__init__ ( name  )
+
+        def makeknives(self,threat=False):
+            if threat==True:
+                print('I have detected a superlative threat, now generating knives!')
+            else:
+                print('rebooting!')
+
+
+
+
+
+
+
+
+
 time.sleep(0.5)
 t100=Terminator('prakash')
 time.sleep(0.9)
@@ -64,4 +84,9 @@ time.sleep(1.5)
 t100.reload(bullets=60)
 time.sleep(2)
 t100.ChooseWeap(env='hostile')
+time.sleep(2)
+jack=Rev19('REV 19 jack')
+time.sleep(2)
+jack.makeknives(threat=True)
+
 
